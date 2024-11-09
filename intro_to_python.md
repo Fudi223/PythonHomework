@@ -4,6 +4,7 @@
 
 '''
 {
+
     print("Hello World!")
 }
 '''
@@ -12,6 +13,7 @@
 
 '''
 {
+
     my_text = "Hello World!"
     print(my_text)
 }
@@ -23,6 +25,7 @@
 
 '''
 {
+
     glass_of_water = "3"
     print("I drank", glass_of_water, "glasses of water today.")
 }
@@ -48,6 +51,7 @@
 
 '''
 {
+    
     men_stepped_on_the_moon=10
 
     print(10)
@@ -59,6 +63,7 @@
 
 '''
 {
+    
     my_reason_for_coding="I want better job opportunities and make silly little games so I can survive the 21st century!"
 
     print(my_reason_for_coding)
@@ -69,6 +74,7 @@
 
 '''
 {
+    
     global_mean_sea_level_2018=21.36
 
     print(global_mean_sea_level_2018)
@@ -81,6 +87,7 @@
 
 '''
 {
+    
     str="It's always darkest before dawn."
 
     print(str)
@@ -90,6 +97,7 @@
 
 '''
 {
+    
     str="It's always darkest before dawn"
 
     ans_1=str[0]+str[1]+str[-1]
@@ -102,6 +110,7 @@
 
 '''
 {
+    
     str="It's always darkest before dawn.'
 
     str.replace(".", "!") 
@@ -116,6 +125,7 @@
 
 '''
 {
+    
     lst=[11, 10, 12, 101, 99, 1000, 999]
 
     answer_1=len(lst)
@@ -127,6 +137,7 @@
 
 '''
 {
+    
     msg="Be yourself, everyone else is taken."
 
     msg_lenght=len(msg)
@@ -139,6 +150,7 @@
 
 '''
 {
+    
     dict=("Real Madrid": 13,"AC Milan": 7,"Bayern Munich":5 ,"Barcelona": 5, "Liverpool": 5)
 
     ans_1=len(dict)
@@ -154,6 +166,7 @@
 
 '''
 {
+    
     lst=[11, 100, 99, 1000, 999]
 
     lst.sort()
@@ -167,6 +180,7 @@
 
 '''
 {
+    
     lst=["Ukraine", "Japan", "Canada", "Kazakhstan", "Taiwan", "India", "Belize"]
 
     lst.sort()
@@ -179,6 +193,7 @@
 
 '''
 {
+    
     lst=[11, 100, 101, 999, 1001]
 
     lst.reverse
@@ -195,6 +210,7 @@
 
 '''
 {
+    
     lst=[11, 100, 99, 1000, 999]
 
     lst.pop(-1)
@@ -210,6 +226,7 @@
 
 '''
 {
+    
     lst=["milk", "banana", "eggs", "bread", "broccoli", "lemons"]
 
     lst.pop(-2)
@@ -224,6 +241,7 @@
 
 '''
 {
+    
     GDP_2018=("US": 21, "China": 16, "Japan": 5, "Germany": 4, "India": 3, "France": 3, "UK": 3, "Italy": 2)
 
     italy_gdp=GDP_2018.pop("Italy")
