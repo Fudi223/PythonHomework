@@ -250,7 +250,7 @@
 }
 '''
 
-#### *Note: This one confused me a little bit, because I wasnt sure why I couldnt just take the "2" at the end with .pop(-1). Had to consult the hint and solution on the website for this one.
+#### *Note: This one confused me a little bit, because I wasnt sure why I couldnt just take the "2" at the end with .pop(-1). Had to consult the hint and solution on the website for this one.*
 
 ---
 
