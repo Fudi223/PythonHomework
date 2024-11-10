@@ -4,7 +4,6 @@
 
 ```
 {
-
     print("Hello World!")
 }
 ```
@@ -13,7 +12,6 @@
 
 ```
 {
-
     my_text = "Hello World!"
     print(my_text)
 }
@@ -25,7 +23,6 @@
 
 ```
 {
-
     glass_of_water = "3"
     print("I drank", glass_of_water, "glasses of water today.")
 }
@@ -35,7 +32,6 @@
 
 ```
 {
- 
     glass_of_water = "3"
 
     glass_of_water =glass_of_water+1
@@ -51,7 +47,6 @@
 
 ```
 {
-    
     men_stepped_on_the_moon=10
 
     print(10)
@@ -62,8 +57,7 @@
 ### 3-b
 
 ```
-{
-    
+{ 
     my_reason_for_coding="I want better job opportunities and make silly little games so I can survive the 21st century!"
 
     print(my_reason_for_coding)
@@ -73,8 +67,7 @@
 ### 3-c
 
 ```
-{
-    
+{ 
     global_mean_sea_level_2018=21.36
 
     print(global_mean_sea_level_2018)
@@ -86,8 +79,7 @@
 ### 9-a
 
 ```
-{
-    
+{   
     str="It's always darkest before dawn."
 
     print(str)
@@ -96,8 +88,7 @@
 ### 9-b
 
 ```
-{
-    
+{   
     str="It's always darkest before dawn"
 
     ans_1=str[0]+str[1]+str[-1]
@@ -109,8 +100,7 @@
 ### 9-c
 
 ```
-{
-    
+{   
     str="It's always darkest before dawn.'
 
     str.replace(".", "!") 
@@ -124,8 +114,7 @@
 ### 10-a
 
 ```
-{
-    
+{    
     lst=[11, 10, 12, 101, 99, 1000, 999]
 
     answer_1=len(lst)
@@ -136,8 +125,7 @@
 ### 10-b
 
 ```
-{
-    
+{  
     msg="Be yourself, everyone else is taken."
 
     msg_lenght=len(msg)
@@ -149,8 +137,7 @@
 ### 10-c
 
 ```
-{
-    
+{   
     dict=("Real Madrid": 13,"AC Milan": 7,"Bayern Munich":5 ,"Barcelona": 5, "Liverpool": 5)
 
     ans_1=len(dict)
@@ -165,8 +152,7 @@
 ### 11-a
 
 ```
-{
-    
+{   
     lst=[11, 100, 99, 1000, 999]
 
     lst.sort()
@@ -179,8 +165,7 @@
 ### 11-b
 
 ```
-{
-    
+{  
     lst=["Ukraine", "Japan", "Canada", "Kazakhstan", "Taiwan", "India", "Belize"]
 
     lst.sort()
@@ -192,8 +177,7 @@
 ### 11-c
 
 ```
-{
-    
+{   
     lst=[11, 100, 101, 999, 1001]
 
     lst.reverse
@@ -209,8 +193,7 @@
 ### 12-a
 
 ```
-{
-    
+{  
     lst=[11, 100, 99, 1000, 999]
 
     lst.pop(-1)
@@ -225,8 +208,7 @@
 ### 12-b
 
 ```
-{
-    
+{   
     lst=["milk", "banana", "eggs", "bread", "broccoli", "lemons"]
 
     lst.pop(-2)
@@ -240,8 +222,7 @@
 ### 12-c
 
 ```
-{
-    
+{   
     GDP_2018=("US": 21, "China": 16, "Japan": 5, "Germany": 4, "India": 3, "France": 3, "UK": 3, "Italy": 2)
 
     italy_gdp=GDP_2018.pop("Italy")
