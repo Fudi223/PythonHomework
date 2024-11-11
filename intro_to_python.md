@@ -114,7 +114,7 @@ print(msg_lenght)
 ### 10-c
 
 ```
-dict=("Real Madrid": 13,"AC Milan": 7,"Bayern Munich":5 ,"Barcelona": 5, "Liverpool": 5)
+dict={"Real Madrid": 13,"AC Milan": 7,"Bayern Munich":5 ,"Barcelona": 5, "Liverpool": 5"}
 
 ans_1=len(dict)
 
