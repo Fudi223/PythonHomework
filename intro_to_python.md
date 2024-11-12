@@ -226,5 +226,6 @@ ans_1=wrd[3:]
 print(ans_1)
 ```
 
+### *Note: Slicing sure was a little bit confusing to grasp, but I found good youtube tutorials that helped me further understand it!*
 ---
 
