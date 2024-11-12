@@ -1,7 +1,3 @@
-# PythonHomework
-
-# Useful Tutorial for Python Coding!
-
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
+# Welcome to my Homework Domain!
 
 
