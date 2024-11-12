@@ -231,4 +231,62 @@ print(ans_1)
 
 # Answer Screenshots from "W3Schools"
 
-![Answer 1](https://i.imgur.com/prDcugA.png)
+## Python Dictionaries
+
+### Answer 1
+
+![answer1](https://i.imgur.com/prDcugA.png)
+
+### Answer 2
+
+![answer2](https://i.imgur.com/t2mMvCX.png)
+
+### Answer 3
+
+![answer3](https://i.imgur.com/ANuKzAq.png)
+
+### Answer 4
+
+![answer4](https://i.imgur.com/hjhBXWN.png)
+
+### Endscreen 1 
+
+![Endscreen1](https://i.imgur.com/mRGdnE1.png)
+
+## Python Access Dictionaries
+
+### Answer 1
+
+![answer5](https://i.imgur.com/HuI1Gj3.png)
+
+### Answer 2
+
+![answer6](https://i.imgur.com/YvJIReO.png)
+
+### Answer 3
+
+![answer7](https://i.imgur.com/0E4zDcX.png)
+
+### Endscreen 2
+
+![Endscreen2](https://i.imgur.com/Ah4MpDk.png)
+
+## Python Change Dictionaries
+
+### Answer 1
+
+![answer8](https://i.imgur.com/HhTRW5c.png)
+
+### Answer 2
+
+![answer9](https://i.imgur.com/fRZpieH.png)
+
+### Answer 3
+
+![answer10](https://i.imgur.com/u9wKG5l.png)
+
+### Endscreen 3
+
+![Endscreen3](https://i.imgur.com/ycCrgu4.png)
+
+---
