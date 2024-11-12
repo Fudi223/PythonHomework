@@ -16,7 +16,7 @@ my_text = "Hello World!"
 print(my_text)
 ```
 
-# Exercise 2
+## Exercise 2
 
 ### 2-a
 
@@ -63,7 +63,7 @@ global_mean_sea_level_2018=21.36
 print(global_mean_sea_level_2018)
 ```
 
-# Exercise 9
+## Exercise 9
 
 ### 9-a
 
@@ -92,7 +92,7 @@ str.replace(".", "!")
 
 #### *Note: This solution worked in Python on my laptop but not the website.*
 
-# Exercise 10
+## Exercise 10
 
 ### 10-a
 
@@ -125,7 +125,7 @@ print(ans_1)
 
 #### *Note: I didn't know what was mean't by keys. I am still a little confused about this exercise.*
 
-# Exercise 11
+## Exercise 11
 
 ### 11-a
 
@@ -160,7 +160,7 @@ print(lst)
 
 #### *Note: Got here by trial and error, but hurray for intuition I guess!*
 
-# Exercise 12
+## Exercise 12
 
 ### 12-a
 
@@ -229,3 +229,6 @@ print(ans_1)
 #### *Note: Slicing sure was a little bit confusing to grasp, but I found good youtube tutorials that helped me further understand it!*
 ---
 
+# Answer Screenshots from "W3Schools"
+
+![image]("C:\Users\fdudi\OneDrive\Desktop\New folder\ans1.png")
