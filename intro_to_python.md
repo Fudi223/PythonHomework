@@ -1,4 +1,6 @@
-# Exercise 1
+# Homework assignment 1
+
+## Exercise 1
 
 ### 1-a - Printing Text ("Hello World!")
 
@@ -195,6 +197,34 @@ print(italy_gdp, "trillion USD")
 ```
 
 #### *Note: This one confused me a little bit, because I wasnt sure why I couldnt just take the "2" at the end with .pop(-1). Had to consult the hint and solution on the website for this one.*
+
+---
+
+# Homework assignment 2
+
+## Exercise 17-a
+
+```
+wrd="Toscana"
+#Type your answer here.
+
+ans_1=wrd[:-3]
+
+
+print(ans_1)
+```
+
+## Exercise 17-b
+
+```
+wrd="Toscana"
+#Type your answer here.
+
+ans_1=wrd[3:]
+
+
+print(ans_1)
+```
 
 ---
 
