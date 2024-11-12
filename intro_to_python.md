@@ -231,4 +231,4 @@ print(ans_1)
 
 # Answer Screenshots from "W3Schools"
 
-![Answer 1](https://imgur.com/a/AAuM9b6)
+![Answer 1](https://i.imgur.com/prDcugA.png)
