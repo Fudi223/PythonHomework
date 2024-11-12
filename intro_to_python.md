@@ -231,4 +231,4 @@ print(ans_1)
 
 # Answer Screenshots from "W3Schools"
 
-![image]("C:\Users\fdudi\OneDrive\Desktop\New folder\ans1.png")
+![Answer 1](https://imgur.com/a/AAuM9b6)
