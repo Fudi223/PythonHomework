@@ -295,37 +295,37 @@ print(ans_1)
 
 ### Answer 1
 
-![answer2.1](https://imgur.com/V314Mim)
+![answer2.1](https://i.imgur.com/V314Mim.png)
 
 ### Answer 2
 
-![answer2.2](https://imgur.com/y4PKvy6)
+![answer2.2](https://i.imgur.com/y4PKvy6.png)
 
 ### Answer 3
 
-![answer2.3](https://imgur.com/rdWOnby)
+![answer2.3](https://i.imgur.com/rdWOnby.png)
 
 ### Answer 4
 
-![answer2.4](https://imgur.com/6qu4WCI)
+![answer2.4](https://i.imgur.com/6qu4WCI.png)
 
 ### Answer 5
 
-![answer2.5](https://imgur.com/J3aJo7L)
+![answer2.5](https://i.imgur.com/J3aJo7L.png)
 
 ### Answer 6
 
-![answer2.6](https://imgur.com/SEB36iq)
+![answer2.6](https://i.imgur.com/SEB36iq.png)
 
 ### Answer 7
 
-![answer2.7](https://imgur.com/5dmR8Ln)
+![answer2.7](https://i.imgur.com/5dmR8Ln.png)
 
 ### Answer 8
 
-![answer2.8](https://imgur.com/aoKEfQ6)
+![answer2.8](https://i.imgur.com/aoKEfQ6.png)
 
 ### Answer 9
 
-![answer2.9](https://imgur.com/B9XtlIL)
+![answer2.9](https://i.imgur.com/B9XtlIL.png)
 
