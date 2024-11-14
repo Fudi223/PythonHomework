@@ -355,4 +355,4 @@ print(ans_1)
 
 ![answer3.6](https://i.imgur.com/i3220hK.png)
 
-## 
+---
