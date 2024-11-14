@@ -329,3 +329,30 @@ print(ans_1)
 
 ![answer2.9](https://i.imgur.com/B9XtlIL.png)
 
+## Python Booleans
+
+### Answer 1
+
+![answer3.1](https://i.imgur.com/dR3VCvo.png)
+
+### Answer 2
+
+![answer3.2](https://i.imgur.com/uwOQ047.png)
+
+### Answer 3
+
+![answer3.3](https://i.imgur.com/T4huEE2.png)
+
+### Answer 4
+
+![answer3.4](https://i.imgur.com/un77xm1.png)
+
+### Answer 5
+
+![answer3.5](https://i.imgur.com/gPhEmYa.png)
+
+### Answer 6
+
+![answer3.6](https://i.imgur.com/i3220hK.png)
+
+## 
