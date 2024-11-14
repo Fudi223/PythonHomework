@@ -290,3 +290,42 @@ print(ans_1)
 ![Endscreen3](https://i.imgur.com/ycCrgu4.png)
 
 ---
+
+## Python Conditions
+
+### Answer 1
+
+![answer2.1](https://imgur.com/V314Mim)
+
+### Answer 2
+
+![answer2.2](https://imgur.com/y4PKvy6)
+
+### Answer 3
+
+![answer2.3](https://imgur.com/rdWOnby)
+
+### Answer 4
+
+![answer2.4](https://imgur.com/6qu4WCI)
+
+### Answer 5
+
+![answer2.5](https://imgur.com/J3aJo7L)
+
+### Answer 6
+
+![answer2.6](https://imgur.com/SEB36iq)
+
+### Answer 7
+
+![answer2.7](https://imgur.com/5dmR8Ln)
+
+### Answer 8
+
+![answer2.8](https://imgur.com/aoKEfQ6)
+
+### Answer 9
+
+![answer2.9](https://imgur.com/B9XtlIL)
+
