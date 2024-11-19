@@ -1,4 +1,4 @@
-filepath = r"C:\Users\fdudi\OneDrive\Desktop\PythonHomework\rosalind_data\ini5.txt"
+filepath = r"E:/Python/PythonHomeworkPC/rosalind_data/ini5.txt"
 with open(filepath, 'r') as infile:
     lines = infile.readlines()
     for line in lines:
