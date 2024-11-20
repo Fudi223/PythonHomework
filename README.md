@@ -1,3 +1,3 @@
-# Welcome to my Homework Domain!
+# Domain Expansion: Python Homework Repository
 
 
