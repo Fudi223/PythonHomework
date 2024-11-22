@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # PROT Exercise
 
 # Given: An RNA string "rosalind_prot" corresponding to a strand of mRNA (of lenght at most 10kbp)
@@ -17,12 +19,16 @@
 # When I use the read_input function, print(len(sample_stringtext)) gives me the number "1", however it should be 51! Why is that happening? Is there something wrong with how
 # the util file works? If this gets fixed, then I think I can continue with solving the next steps (hopefully)...
 
+# Go over the input, don't modify it!
 
-# from util import read_input
+from util import read_input
 
-# sample_stringtext = read_input('./rosalind_prot.txt')
+sample_stringtext = read_input('./rosalind_prot.txt')
 
-codon_table_dict = {"UUU": "F", "CUU": "L", "AUU": "I","GUU": "V",
+sequence_string = sample_stringtext[0]
+
+codon_table_dict = {
+"UUU": "F", "CUU": "L", "AUU": "I","GUU": "V",
 "UUC": "F", "CUC": "L", "AUC": "I", "GUC": "V",
 "UUA": "L", "CUA": "L", "AUA": "I", "GUA": "V",
 "UUG": "L", "CUG": "L", "AUG": "M", "GUG": "V",
@@ -41,9 +47,11 @@ codon_table_dict = {"UUU": "F", "CUU": "L", "AUU": "I","GUU": "V",
 
 # print(codon_table_dict["AAA"])
 
-# print(sample_stringtext)
+# print(len(sample_stringtext))
 
 # Note: using read_input from util is not working for some reason, the lenght for the sample_stringtext appears to be "1", which is not the case (it should be 51).
+# -> SOLUTION: the input file has to be assigned to a new variable that looks like this: "list_new = read_input(./sample.txt)   string = list_new[0]". This way, the whole text (or string)
+# isn't read as just one element, because its a list otherwise
 
 # for prots in codon_table_dict:
 #     if prots == codon_table_dict["AUG"]:
@@ -53,13 +61,13 @@ codon_table_dict = {"UUU": "F", "CUU": "L", "AUU": "I","GUU": "V",
 
 # I tried it with defining a new variable with the example code from Rosalind, and this worked the way it should! It counted the lenght right, and it managed to slice it into triplets.
 
-sequence = "AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
+sequence = sequence_string
 
-for i in range(0, len(sequence), 3):
-    codon = sequence[i:i+3]
+for start_of_sequence in range(0, len(sequence), 3):
+    print(sequence[start_of_sequence:start_of_sequence+3])
+    codon = sequence[start_of_sequence:start_of_sequence+3]
     if len(codon) == 3:
         print(codon)
-
 
 
 
