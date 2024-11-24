@@ -27,7 +27,7 @@ t = "TCGACGATTTGGTTCATTCTTGGTACGCGTGTAATACCGTTAACCCGAAAAAGAAGCCCTGCGGTGGCAGCGCGA
 
 dH = ""
 
-hamms = zip(s, t)
+# hamms = zip(s, t)
 
 
 for nucl_s, nucl_t in zip(s, t):
