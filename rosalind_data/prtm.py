@@ -2,6 +2,14 @@
 
 # Rosalind prtm exercise
 
+# from util import read_input -> had some issues, so I just copy pasted the string from the txt
+
+sample = "SIAYNVWTGWAFPWGASTCVFALKVCVLKVNWSRTWGPCRQSAFQNCWSWSMFERTYFAAVICPEHVTAMKNTIQFSWRVPQDAEIMIEWWQLRSLMIGCCMDQCSRIIRYFRKLKIHRQMIYFGCVAWDALSYQGHPRLGLEGMEMGMALRCDCISGLLGRIQQSSPKVQYGGIHMSKYHHTMHIKKIEFDLMHSCCGGVLPCGTVRTDREMAHFHCAMGNHSDSQWEQQIVFQDPRNECFHVMGDYLFSEPKMVPVTLVLGWFFKGCCRVKYWDMIHGYWVKTFTLEEDIMDNENVYKKVISDPGGPEQCIIKNSKGNDSMMYLELCAYINNQHTFYGICPRPLMDERISNHFDDGAQCEYPGIEQWQFHIRGLGEATIRQDETPTPDMRNGDLCRTRFASYSDAKQQQAAASGDPCESGDDNHWGIWSCILHTLNEDRETHSHVTKLNAHQDWVDKVFIRINVTFRIWWVTHIPAQWTLTPPSTNQNQKIVDPGYCISKHHFAGAHRKDPFSRPIQVHQKEEIAMLMIWFMVWSTPRIHEYPSWCWTSEVGMYFGVRCVFWDVVSHEAAFGYDTSFALIGYSWPMQSQEQDAPDEYLSHLTGKAKNRLEVDVRYYSWYCNWKLVDCEPGWFAIMDECLCKTMDHDTGCCLVYAKANTQVVELTQADIGHLFHNKSFYTHCQPVLAERNVSKFICDDPQPNMISRNPHTGSDEQEVMIPKGYTIRMMIEWINCRDFVTTWCAMRVEYGGCDNQYRCYHWLDNYITNYVFTCITVQISCFYEYLDPLQALESDKYKGGGEFNDWPFSPPQDWEHWIKQSVPLWASYACRAPGRRCAFSEGKHERTDDDAQTNDGNRFLEGKYYYSKPQAFYIMRINRFQAYCMCMQVAGNLNEAEKRNVMNVFTVHRAWPKPAHWHPTFLDCISVMWNWTYIKCPRAWWDSAKPMKCENMWAGPI"
+
+protein = sample
+
+# I mostly did what we did for the last exercise, first a dictionary
+
 weight_dict = {
 "A": "71.03711",
 "C": "103.00919",
@@ -24,19 +32,19 @@ weight_dict = {
 "W": "186.07931",
 "Y": "163.06333" }
 
+# then almost the same for loop, but with spaces added for the weight string output
+# That was neccessary, because otherwise the output string was one long noodle of all the numbers put together
 weight = ""
 
+for start in range(0, len(protein)):
+    codon = protein[start:start+1]
+    aminoacid = weight_dict[codon]
+    weight += aminoacid + " "
 
+# The final thing with which I struggled after I made the string output work, was how to get python to add the numbers together (or even read them as numbers).
+# turns out, it was needed to turn them into floats! Also, what I had no idea about, was that I needed to use .split to have the weight numbers be seperate. 
+# Then, everything finally worked! The biggeset challenge was figuring out how to get the string converted into numbers (took some research but here we are)
 
+weight_sum = [float((weight_number) for weight_number in weight.split())]
 
-# for amino, weight_amino in:
-#     if 
-#         weight += 
-#     else:
-#         pass
-# print(len(weight))
-
-
-
-
-
+print(sum(weight_sum))
