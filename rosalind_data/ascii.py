@@ -27,42 +27,19 @@ pyramid_size = int(input("How tall is the Pyramid? "))
 
 pyramid_sides_dictionary = {"left_side": "/", "right_side": "\\"}
 
-# for sides in pyramid_sides_dictionary.values():
-#     print(sides, end="")
+left = pyramid_sides_dictionary["left_side"]
+right = pyramid_sides_dictionary["right_side"]        
 
-# The next step then would be creating a loop and have the input prompt implemented (I think).
-
-# for left in pyramid_sides_dictionary["left_side"]:
-#     if left != left[0:]:
-#             print(left)
-#     else:
-#         if left == left[0:]:
-#              print(left, pyramid_size)
-#     print()
-
-
-# After consulting the internet, it seems like this solution is overly complicated.
-# Here is what I found that should probably work:
-
-# for i in range(pyramid_size): 
-#     for j in range(pyramid_size - i - 1):
-       
-#         print(" ", end="")
-   
-#     print(pyramid_sides_dictionary["left_side"], end="")
-    
-#     if i > 0:
-#         for k in range(2 * i - 1):
-       
-#             print(" ", end="")
-
-#     print(pyramid_sides_dictionary["right_side"], end="")
-    
-#     print()
-
-
-# the second row doesnt work, I dont know what to do
-
+for a in range(pyramid_size):
+    spaces_leftside = pyramid_size - a - 1
+    if a == 0:
+        spaces_betweenLR = 0
+    else: 
+        spaces_betweenLR = 2 * a
+    if a == pyramid_size - 1:
+        print(" " * spaces_leftside + left + "_" * spaces_betweenLR + right)
+    else:
+        print(" " * spaces_leftside + left + " " * spaces_betweenLR + right)
 
 
 
