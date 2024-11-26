@@ -1,3 +1,5 @@
+#!usr/bin/env python3
+
 # This will be my new attempt at making a script that draws ASCII art, this time a square.
 
 # As with the triangle, lets have an input prompt:

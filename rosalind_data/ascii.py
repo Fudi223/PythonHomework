@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # This is the attempt at making a ASCII art drawing script
 
 # Goal: Draw a pyramid with as many lines as the user puts into the prompt.
