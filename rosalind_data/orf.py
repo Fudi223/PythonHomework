@@ -21,35 +21,23 @@ code = {
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G"
 }
 
-string = "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
-RNA = " "
-
-for letter in string:
-    if letter == "A":
-        RNA += "A"
-    if letter == "C":
-        RNA += "C"
-    if letter == "G":
-         RNA += "G"
-else:
-    if RNA == "T":
-        RNA + "U"
-print(RNA)
-        
-
+s= "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
+t = s.replace("T", "U")
+       
+print(t)
 
 
 # positions = []
 
-# for pos_s, base_s in enumerate(string):
-#     for pos_t, base_t in enumerate(aminoacid):
-#         if string[pos_s + pos_t] != aminoacid[pos_t]:
+# for pos_s, base_s in enumerate(s):
+#     for pos_t, base_t in enumerate(t):
+#         if s[pos_s + pos_t] != t[pos_t]:
 #             break
-#         if (pos_t + 1) == len(aminoacid):
+#         if (pos_t + 1) == len(t):
 #             positions.append(pos_s + 1)
 # for a in positions:
 #     print(a, end=" ")
-# print()
+# print(s)
 
 
 # # read triplets
