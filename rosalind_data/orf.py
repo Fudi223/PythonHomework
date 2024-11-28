@@ -21,13 +21,34 @@ code = {
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G"
 }
 
-s= "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
-t = s.replace("T", "U")
-       
-print(t)
+ComplementaryDNA = "CTGAGATGCTACTCGGATCATTCAGGCTTATTCCAAAAGAGACTCTAATCCAAGTCGCGGGGTCATCCCCATGTAACCTGAGTTAGCTACATGGCT"
+ComplementaryRNA = ComplementaryDNA.replace("T", "U")
+DNA = "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
+RNA = DNA.replace("T", "U")
+
+# Sample Output 1 = M - Comes from the RNA Strand right at the beginning, there is an "AUG" immediately followed by a "UAG"
+# Sample Output 2 = MLLGSFRLIPKETLIQVAGSSPCNLS  - This is the reverse RNA Strand
+
+# print(RNA)
+# print(ComplementaryRNA)
 
 
-# positions = []
+# star_codon = "AUG"
+# stop_codon = ("UAA", "UAG", "UGA")
+
+# def find_orf(RNA):
+#     peptide = ""
+#     for start in range(0, len(RNA), 3):
+#         codon = RNA[start:start+3]
+#         aminoacid = code[codon]
+#         if aminoacid == "M":
+#             break
+#         if aminoacid == "Stop":
+#             break
+#         peptide += aminoacid
+# result_PEPTIDE = find_orf(RNA)
+# print(result_PEPTIDE)    
+
 
 # for pos_s, base_s in enumerate(s):
 #     for pos_t, base_t in enumerate(t):
