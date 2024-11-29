@@ -22,21 +22,17 @@ code = {
 }
 
 # used code from the REVC exercise to get the complementary strands
-
-# dna_strand = "strand"
-# reverse_strand = dna_strand[::-1]
-# complementary_nukes = str.maketrans("ATCG", "TAGC")
-# complementary_strand = reverse_strand.translate(complementary_nukes)
-# print(complementary_strand)
+DNA_strand = "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
+reverse_strand = DNA_strand[::-1]
+complementary_nukes = str.maketrans("ATCG", "TAGC")
+complementary_strand = reverse_strand.translate(ComplementaryDNA)
+print(ComplementaryDNA)
 
 # Here we can swap the "T" and "U" in both strands
-ComplementaryDNA = "CTGAGATGCTACTCGGATCATTCAGGCTTATTCCAAAAGAGACTCTAATCCAAGTCGCGGGGTCATCCCCATGTAACCTGAGTTAGCTACATGGCT"
 ComplementaryRNA = ComplementaryDNA.replace("T", "U")
-DNA_strand = "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
 RNA_strand = DNA_strand.replace("T", "U")
 
 # Here are our start and stop codons
-
 start_codon = "AUG"
 stop_codon = ("UAA", "UAG", "UGA")
 
