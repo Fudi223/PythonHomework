@@ -21,37 +21,44 @@ code = {
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G"
 }
 
-s= "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
-t = s.replace("T", "U")
-       
-print(t)
+# used code from the REVC exercise to get the complementary strands
 
+# dna_strand = "strand"
+# reverse_strand = dna_strand[::-1]
+# complementary_nukes = str.maketrans("ATCG", "TAGC")
+# complementary_strand = reverse_strand.translate(complementary_nukes)
+# print(complementary_strand)
 
-# positions = []
+# Here we can swap the "T" and "U" in both strands
+ComplementaryDNA = "CTGAGATGCTACTCGGATCATTCAGGCTTATTCCAAAAGAGACTCTAATCCAAGTCGCGGGGTCATCCCCATGTAACCTGAGTTAGCTACATGGCT"
+ComplementaryRNA = ComplementaryDNA.replace("T", "U")
+DNA_strand = "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
+RNA_strand = DNA_strand.replace("T", "U")
 
-# for pos_s, base_s in enumerate(s):
-#     for pos_t, base_t in enumerate(t):
-#         if s[pos_s + pos_t] != t[pos_t]:
-#             break
-#         if (pos_t + 1) == len(t):
-#             positions.append(pos_s + 1)
-# for a in positions:
-#     print(a, end=" ")
-# print(s)
+# Here are our start and stop codons
 
+start_codon = "AUG"
+stop_codon = ("UAA", "UAG", "UGA")
 
-# # read triplets
+# And from here on, I had help and unfortunately wasnt taken step by step so I am a little lost as to how the loops influence each other... 
+# All seems very familiar from previous exercises, and while brainstorming, we got to how it needs to be solved, but not how to do the loops
+# This worked out with the samples
+# What is missing is the import and formatting of the rosalind files, like this it needs manual copy pasting
+# I really want to know, how the nested loops here work...
 
-# rna = string[0]
+peptides = list()
 
-# # read the rna in triplets:
-# peptide = ""
-# for start in range(0, len(rna), 3):
-#     codon = rna[start:start+3]
-#     aminoacid = code[codon]
-#     if aminoacid == "Stop":
-#         break
-#     peptide += aminoacid
-#     # print(codon, "corresponds to", aminoacid)
-
-# print(peptide)
+for RNA_trip in (ComplementaryRNA, RNA_strand):
+    for start in range(0, len(RNA_trip), 1):
+        codon = RNA_trip[start:start + 3]
+        if codon == start_codon:
+            peptide = ""
+            for stop in range (start, len(RNA_trip), 3):
+                codon = RNA_trip[stop:stop +3 ] 
+                if codon in stop_codon:
+                    if not peptide in peptides:
+                        peptides.append(peptide)
+                    break
+                peptide += code[codon]
+for peptide in peptides:
+    print(peptide)
