@@ -23,9 +23,9 @@ code = {
 
 # used code from the REVC exercise to get the complementary strands
 DNA_strand = "AGCCATGTAGCTAACTCAGGTTACATGGGGATGACCCCGCGACTTGGATTAGAGTCTCTTTTGGAATAAGCCTGAATGATCCGAGTAGCATCTCAG"
-reverse_strand = DNA_strand[::-1]
+reverse = DNA_strand[::-1]
 complementary_nukes = str.maketrans("ATCG", "TAGC")
-complementary_strand = reverse_strand.translate(ComplementaryDNA)
+ComplementaryDNA = reverse.translate(reverse)
 print(ComplementaryDNA)
 
 # Here we can swap the "T" and "U" in both strands
