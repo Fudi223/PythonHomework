@@ -27,6 +27,8 @@ code = {
     "UGG": "W",      "CGG": "R",      "AGG": "R",      "GGG": "G"
 }
 
+
+
 line_list = read_input("../rosalind_data/rosalind_prot.txt")
 rna = line_list[0]
 
