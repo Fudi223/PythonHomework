@@ -6,9 +6,3 @@ def read_input(filepath):
         stripped = []
         for line in lines:
             stripped.append(line.strip())
-    return stripped
-
-
-def RNA_Rev(DNA):
-    DNA = DNA.replace("T", "U")
-print(RNA_Rev)
