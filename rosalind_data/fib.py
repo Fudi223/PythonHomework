@@ -21,10 +21,9 @@ k = pairs
 # print(rabbits(n,k))
 
 def rabbits(n,k):
-    if n < 1 : 
-        return 0
-    if n == 1 or n == 2:
-        return 2
-    return rabbits(n-1, k) + k *(n -2)
+    if n < 2 : 
+        return n
+    else:
+        return rabbits(n - 1, k) + k * rabbits(n - 2, k)
 
 print(rabbits(n,k))

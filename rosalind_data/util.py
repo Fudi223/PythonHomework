@@ -6,4 +6,3 @@ def read_input(filepath):
         stripped = []
         for line in lines:
             stripped.append(line.strip())
-    return stripped

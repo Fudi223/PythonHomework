@@ -18,18 +18,13 @@ seqs = ["ATCCAGCT",
 	    "ATGGCACT",]
 
 nucleotide_counter = {"A": 0,
-               "B": 0,
-               "C": 0,
-               "D": 0}
-counter = " "
+               "T": 0,
+               "G": 0,
+               "C": 0}
 
-for s in range(0, len(seqs)):
-    if (seqs[s] !="A"):
-        counter = counter + 1
-    if (seqs[s] !="T"):
-        counter = counter + 1
-    if (seqs[s] !="C"):
-        counter = counter + 1
-    if (seqs[s] !="G"):
-        counter = counter + 1
-print(str(counter))
+for seq in seqs:
+    for nucleotide in seq:
+        if nucleotide in nucleotide_counter:
+            nucleotide_counter[nucleotide] += 1
+print(nucleotide_counter)
+
