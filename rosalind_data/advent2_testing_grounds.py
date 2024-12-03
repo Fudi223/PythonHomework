@@ -46,4 +46,4 @@ print(true_count)
 # thoughts for part 2:
 # Tweak the previous code to replace the numbers that would otherwise return a false statement BUT
 # only if a number can be removed in order to make the level safe.
-# An if statement among the lines fo 
+# An if statement will check if two adjacent numbers are the same. if yes, it should remove the first one of those.
