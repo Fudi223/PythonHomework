@@ -43,7 +43,3 @@ with open(safeornot, "r") as file:
 
 print(true_count)
 
-# thoughts for part 2:
-# Tweak the previous code to replace the numbers that would otherwise return a false statement BUT
-# only if a number can be removed in order to make the level safe.
-# An if statement among the lines fo 
