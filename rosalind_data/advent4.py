@@ -26,8 +26,8 @@ def horizontal_xmas():
         count = line_string.count(searched_word1)
         if count > 0:
             counter1 += count
-            print(f"Found {searched_word1} in line: {line} (count: {count})")
-            print(counter1)
+            # print(f"Found {searched_word1} in line: {line} (count: {count})")
+            # print(counter1)
     return counter1
 
 def horizontal_xmas_backwards():
@@ -37,15 +37,9 @@ def horizontal_xmas_backwards():
         count = line_string.count(searched_word2)
         if count > 0:
             counter2 += count
-            print(f"Found {searched_word2} in line: {line} (count: {count})")
-            print(counter2)
+            # print(f"Found {searched_word2} in line: {line} (count: {count})")
+            # print(counter2)
     return counter2 
-
-
-
-
-
-
 
 # First number in matrix print = vertical, second horizontal
 
@@ -57,8 +51,8 @@ def vertical_xmas_down():
         count = vertical_string_top.count(searched_word1)
         if count > 0:
             counter3 += count
-            print(f"Found {searched_word1} in column: {col} (count: {count})")
-            print(counter3)
+            # print(f"Found {searched_word1} in column: {col} (count: {count})")
+            # print(counter3)
     
     return counter3
 
@@ -70,10 +64,12 @@ def vertical_xmas_up():
         count = vertical_string_top.count(searched_word2)
         if count > 0:
             counter4 += count
-            print(f"Found {searched_word2} in column: {col} (count: {count})")
-            print(counter4)
+            # print(f"Found {searched_word2} in column: {col} (count: {count})")
+            # print(counter4)
     
     return counter4
+
+
 
 
 counter1 = horizontal_xmas()
