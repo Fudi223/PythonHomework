@@ -4,7 +4,7 @@
 
 from util import read_input
 
-levels_grid_raw = read_input("C:/PythonHomework/rosalind_data/advent2.txt")
+levels_grid_raw = read_input("C:/Users/fdudi/OneDrive/Desktop/PythonHomework/rosalind_data/advent2.txt")
 
 levels_grid = [[int(x) for x in line.split()] for line in levels_grid_raw]
 
