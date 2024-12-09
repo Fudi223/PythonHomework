@@ -2,44 +2,36 @@
 
 # Advent 2
 
+from util import read_input
 
-import os # Used for global same directory call to "safeornot.txt"
+levels_grid_raw = read_input("C:/PythonHomework/rosalind_data/advent2.txt")
 
-# Global call to safeornot.txt
-here = os.path.dirname(os.path.abspath(__file__))
-safeornot = os.path.join(here, "advent2.txt")
+levels_grid = [[int(x) for x in line.split()] for line in levels_grid_raw]
 
+print(levels_grid)
+# example_levels = [
+# [7, 6, 4, 2, 1],
+# [1, 2, 7, 8, 9],
+# [9, 7, 6, 2, 1],
+# [1, 3, 2, 4, 5],
+# [8, 6, 4, 4, 1],
+# [1, 3, 6, 7, 9]]
 
-def is_valid_range(line):
-  """Checks if a line representing a range of numbers has gaps <= 3."""
+safe_counter = 0
+# unsafe_counter = 0
 
-  numbers = [int(x) for x in line.split()] 
+for level in levels_grid:
+    for i, number in enumerate(level):
+        # print(f"Number is {number} Index is {i}")
+        if i + 1 < len(level):
+          if i != 0:
+            is_between = (level[i - 1] < number and number < level[i + 1]) or (level[i - 1] > number and number > level[i + 1])
+            absol_dif = abs(number - level[i + 1])
+            if absol_dif == 0 or absol_dif > 3 or not is_between:
+                # unsafe_counter += 1
+                break
+        else:
+            safe_counter += 1 
 
-  if len(numbers) < 2:
-    return False  # Not enough numbers to check
-
-  is_ascending = numbers[1] > numbers[0]  # Determine initial direction  
-
-  for i in range(1, len(numbers)):
-    gap = abs(numbers[i] - numbers[i - 1])  # Calculate absolute gap
-    if gap > 3:
-      return False  # Gap too large
-
-    if is_ascending and numbers[i] <= numbers[i-1]:
-      return False  # Violated ascending order
-    elif not is_ascending and numbers[i] >= numbers[i-1]:
-      return False  # Violated descending order
-
-  return True  # All checks passed
-
-true_count = 0
-
-with open(safeornot, "r") as file:
-  for line in file:
-    is_valid = is_valid_range(line.strip())
-    print(f"Line '{line.strip()}': {is_valid}") 
-    if is_valid:
-        true_count += 1
-
-print(true_count)
-
+print("There are", safe_counter, "safe levels")
+# print("There are", unsafe_counter, "unsafe levels")

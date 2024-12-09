@@ -13,8 +13,8 @@ def read_input(filepath):
 
 # Tims file import os:
 
-import os # Used for global same directory call to "safeornot.txt"
+# import os # Used for global same directory call to "safeornot.txt"
 
-# Global call to safeornot.txt
-here = os.path.dirname(os.path.abspath(__file__))
-safeornot = os.path.join(here, "FILENAME")
+# # Global call to safeornot.txt
+# here = os.path.dirname(os.path.abspath(__file__))
+# safeornot = os.path.join(here, "FILENAME")
