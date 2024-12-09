@@ -25,7 +25,7 @@ printed_pages = read_input(
     "C:/Users/fdudi/OneDrive/Desktop/PythonHomework/rosalind_data/advent5_input.txt"
 )
 
-rules_example = [
+pages_example = [
     [47, 53],
     [97, 13],
     [97, 61],
