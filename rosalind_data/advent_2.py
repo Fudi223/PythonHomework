@@ -8,7 +8,7 @@ levels_grid_raw = read_input("C:/Users/fdudi/OneDrive/Desktop/PythonHomework/ros
 
 levels_grid = [[int(x) for x in line.split()] for line in levels_grid_raw]
 
-print(levels_grid)
+# print(levels_grid)
 # example_levels = [
 # [7, 6, 4, 2, 1],
 # [1, 2, 7, 8, 9],
@@ -24,13 +24,21 @@ for level in levels_grid:
     for i, number in enumerate(level):
         # print(f"Number is {number} Index is {i}")
         if i + 1 < len(level):
+          # step 1: what is the absolute difference?
+          absol_dif = abs(number - level[i + 1])
+          within_bounds = absol_dif < 4 and absol_dif > 0
+          # step 2: is it monotonically falling/rising?
           if i != 0:
             is_between = (level[i - 1] < number and number < level[i + 1]) or (level[i - 1] > number and number > level[i + 1])
-            absol_dif = abs(number - level[i + 1])
-            if absol_dif == 0 or absol_dif > 3 or not is_between:
-                # unsafe_counter += 1
-                break
+          else: 
+            is_between = True
+
+          # actually check the conditions
+          if not within_bounds or not is_between:
+              # unsafe_counter += 1
+              break
         else:
+            # print(level)
             safe_counter += 1 
 
 print("There are", safe_counter, "safe levels")
