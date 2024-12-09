@@ -21,7 +21,7 @@
 
 from util import read_input
 
-printe_pages = read_input(
+printed_pages = read_input(
     "C:/Users/fdudi/OneDrive/Desktop/PythonHomework/rosalind_data/advent5_input.txt"
 )
 
@@ -49,6 +49,8 @@ rules_example = [
     [53, 13],
 ]
 
+
+
 updates_examples = [
     [75, 47, 61, 53, 29],
     [97, 61, 53, 29, 13],
@@ -58,10 +60,8 @@ updates_examples = [
     [97, 13, 75, 29, 47],
 ]
 
-# Step 1: use OR operand from the rules list. Then get the OR of each set rule.
-# Step 2: Create a function that gets the OR value of each of combo of numbers in the update_example lists.
-# Step 3: If there is a OR value found that matches an OR value from the rules_example list, add the match to a new list.
-
-
-print(rules_example)
-# print(updates_examples)
+# Step 1: Compare EVERY LIST in updates to EVERY LIST in rules. Go over each number, whereas first it should be checking the rules lists content.
+# Step 2: Rules list content goes over each number in the updates lists.
+# Step 3: Create conditions (if the order is ok, keep the list and put it into a new one. if its not, skip it)
+# Step 4: Find a way to take the middle number of each valid list and put it into its own list and then add em all together!
+# Step 5: gg(?)
