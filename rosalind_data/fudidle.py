@@ -1,4 +1,5 @@
 
+# from util import read_input:
 
 victory_word = "SCARF"
 # I didnt implement this yet properly but I want to make sure that if a word is entered that is longer than 5 letters, it should say "Word has to be 5 letters long" and return to the input.
@@ -22,6 +23,7 @@ while True:
         if letterA == letterB:
             # add "O" to the grid if correct
             correct_or_wrong_grid += "O"
+        
         else:
             if letterB in victory_word:
                 correct_or_wrong_grid += "/"
@@ -29,6 +31,7 @@ while True:
             else:
                 if letterA != letterB:
                     correct_or_wrong_grid += "X" 
+    print(word_input)
     print(correct_or_wrong_grid)
 
     # exit the loop if the right word is entered
