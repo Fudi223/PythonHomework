@@ -2,7 +2,7 @@
 
 # Rosalind REVP
 
-sample = "TCAATGCATGCGGGTCTATATGCAT"
+
 
 # takes a string as an input, reverses it and then creates the complementary strand by replacing ATGC with TACG.
 # def strand_complementing(file):    
@@ -23,8 +23,8 @@ sample = "TCAATGCATGCGGGTCTATATGCAT"
 
 # Start with reading the first letter, then check the string until we find the complementary base
 # after we find that, we check the next letter after the first one has its complementary base one position before the complementary base of the first one
-# that would be put like this, for the sample: t = sample[0:], a = sample [2:]. then the next letter is c. c = sample[t+1:]. so to check if it has a complementary base before a : 
-# it would look have to go -1 from the position of a, so sample[a-1:]. Here however, it would be a c, not to mention that there if there arent more than 2 letters inbetween the start and last
+# that would be put like this, for the sample: t = sample[0], a = sample [2]. then the next letter is c. c = sample[t+1]. so to check if it has a complementary base before a : 
+# it would look have to go -1 from the position of a, so sample[a-1]. Here however, it would be a c, not to mention that there if there arent more than 2 letters inbetween the start and last
 # position, it cant be a palindrome. Then we repeat the process for the next position in the string and so on. The ending border has to be defined, so we dont go outside of it.
 # it would be put like so : range(0, len(sample) - 1) (I think). So now we can find the palindromes (hopefully). Next, we will need the starting position of them in the sample string and
 # their lenght. Lets start with the first one. To get the starting position, we need to set a condition, that will put the number of the position into either a list, or an empty string, or maybe 
@@ -33,5 +33,16 @@ sample = "TCAATGCATGCGGGTCTATATGCAT"
 # palindrome has been found, we need to add the len(palindrome) integer to our results string, so results_len += len(palindrome). And that should be it! (I hope).
 # Note: make sure to search in a range of 12 and in the whole range so that a potential palindrome wont be overlooked and not checked.
 
-for i, x in enumerate(sample):
-    
+
+
+palindrom_starts = []
+palindrome_lenghts = ""
+sample = "TCAATGCATGCGGGTCTATATGCAT"
+
+def check_T_to_A():
+    for pos_b in range(len(sample)):
+        base = sample[pos_b]
+        if base == "T":
+            return pos_b
+
+            
